@@ -1,0 +1,16 @@
+client - request
+{
+	"user":"mustermann"
+	"password":md5 hashkey
+	"request":request_type (initial_login, refresh, change, add)
+	"timestamp":aktueller unix-timestamp
+}
+server - respond
+{
+	"user":"mustermann"
+	"timestamp":aktueller unix timestamp
+	"notes":[
+		"title":titel der notiz
+		"
+	]
+}

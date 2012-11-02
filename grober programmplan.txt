@@ -1,0 +1,6 @@
+-user öffnet app
+-loggt sich mit benutzername und passwort ein (bei falschen anmeldedaten bleibt er in den bildschirm und sagt ihm, dass die anmeldedaten fehlerhaft waren) -> server anfrage, wo die eingegebenen benutzerdaten übermittelt und überprüft werden
+-bekommt eine übersicht aller notizen -> per aufruf an einen server werden alle notizen des benutzers geladen
+-refresh button (lädt alle notizen erneut) -> gleicher aufruf wie nach dem einloggen
+-hinzufügen button (öffnet einfaches formular (titel, farbe, ablaufdatum, inhalt)) -> per speichern wird dies an einen server verschickt, der dies in eine datenbank speichert
+-notizen können angeklickt und bearbeitet werden (öffnet gleiches formular wie beim hinzufügen, nur lädt er die daten von der existierenden notiz) -> per speichern wird dies an einen server verschickt, der die bestehende notiz in der datenbank aktualisiert
