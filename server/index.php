@@ -1,9 +1,8 @@
 <?php
 /**
 *
-* @author < >
-* @version 
-* @module
+* @author Marcel Bohländer 
+* @version 0.1
 */
 
 /**
