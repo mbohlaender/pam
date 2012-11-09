@@ -1,16 +1,95 @@
+Login
+
 client - request
 {
+	"request":login
 	"user":"mustermann"
 	"password":md5 hashkey
-	"request":request_type (initial_login, refresh, change, add)
 	"timestamp":aktueller unix-timestamp
 }
+
 server - respond
 {
+	"respond":login
+	"success":true/false
+}
+
+getNotes
+
+client - request
+{
+	"request":notes
 	"user":"mustermann"
-	"timestamp":aktueller unix timestamp
-	"notes":[
-		"title":titel der notiz
-		"
+	"password":md5 hashkey
+	"timestamp":aktueller unix-timestamp
+}
+
+server - respond
+{
+	"respond":notes
+	"notes": [
+		{ 
+			"id":1,
+			"title":"Title",
+			"content":"Haare - schneiden",
+			"created_at":timestamp,
+			"valid_to":timestamp,
+			"category":important,normal,unimportant
+		}, 
+		{ 
+			"id":2,
+			"title":"Title",
+			"content":"Haare - schneiden",
+			"created_at":timestamp,
+			"valid_to":timestamp,
+			"category":important,normal,unimportant
+		},
 	]
+}
+
+addNote
+
+client - request
+{
+	"request":add
+	"user":"mustermann"
+	"password":md5 hashkey
+	"timestamp":aktueller unix-timestamp
+	"note":
+	{ 
+			"title":"Title",
+			"content":"Haare - schneiden",
+			"created_at":timestamp,
+			"valid_to":timestamp,
+			"category":important,normal,unimportant
+	}
+}
+respond - request
+{
+	"respond":add
+	"success":true/false
+}
+
+changeNote
+
+client - request
+{
+	"request":add
+	"user":"mustermann"
+	"password":md5 hashkey
+	"timestamp":aktueller unix-timestamp
+	"note":
+	{ 
+			"id":3,
+			"title":"Title",
+			"content":"Haare - schneiden",
+			"created_at":timestamp,
+			"valid_to":timestamp,
+			"category":important,normal,unimportant
+	}
+}
+respond - request
+{
+	"respond":add
+	"success":true/false
 }
