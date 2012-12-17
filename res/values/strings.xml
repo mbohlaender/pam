@@ -1,8 +1,8 @@
 <resources>
 
-    <string name="app_name">Klassenmanager</string>
+    <string name="app_name">Pam</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">Klassenmanager</string>
+    <string name="title_activity_main">Pam</string>
 
 </resources>
