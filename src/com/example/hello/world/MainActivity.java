@@ -2,7 +2,9 @@ package com.example.hello.world;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -17,4 +19,15 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
+    
+    public void onButtonClick(View view) {
+    	
+    	if (view.getId() == R.id.login) {
+    		startActivity(new Intent(this, ViewScreenActivity.class));
+    	}
+    	else {
+    		
+    	}
+    }
+    
 }
