@@ -2,23 +2,24 @@ Login
 
 client - request
 {
-	"request":login
-	"user":"mustermann"
+	"requestType":login
+	"username":"mustermann"
 	"password":md5 hashkey
 	"timestamp":aktueller unix-timestamp
 }
 
 server - respond
 {
-	"respond":login
+	"respondType":login
 	"success":true/false
+    "error":fehlermeldung im fehlerfall
 }
 
 getNotes
 
 client - request
 {
-	"request":notes
+	"requestType":notes
 	"user":"mustermann"
 	"password":md5 hashkey
 	"timestamp":aktueller unix-timestamp
@@ -26,7 +27,7 @@ client - request
 
 server - respond
 {
-	"respond":notes
+	"respondType":notes
 	"notes": [
 		{ 
 			"id":1,
@@ -45,13 +46,14 @@ server - respond
 			"category":important,normal,unimportant
 		},
 	]
+    "error":fehlermeldung im fehlerfall
 }
 
 addNote
 
 client - request
 {
-	"request":add
+	"requestType":addNote
 	"user":"mustermann"
 	"password":md5 hashkey
 	"timestamp":aktueller unix-timestamp
@@ -59,22 +61,22 @@ client - request
 	{ 
 			"title":"Title",
 			"content":"Haare - schneiden",
-			"created_at":timestamp,
 			"valid_to":timestamp,
 			"category":important,normal,unimportant
 	}
 }
 respond - request
 {
-	"respond":add
+	"respondType":add
 	"success":true/false
+    "error":fehlermeldung im fehlerfall
 }
 
 changeNote
 
 client - request
 {
-	"request":add
+	"requestType":change
 	"user":"mustermann"
 	"password":md5 hashkey
 	"timestamp":aktueller unix-timestamp
@@ -90,6 +92,7 @@ client - request
 }
 respond - request
 {
-	"respond":add
+	"respondType":change
 	"success":true/false
+    "error":fehlermeldung im fehlerfall
 }
