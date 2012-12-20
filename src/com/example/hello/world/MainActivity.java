@@ -25,9 +25,6 @@ public class MainActivity extends Activity {
     	if (view.getId() == R.id.login) {
     		startActivity(new Intent(this, ViewScreenActivity.class));
     	}
-    	else {
-    		
-    	}
     }
     
 }
