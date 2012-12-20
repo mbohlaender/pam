@@ -1,0 +1,13 @@
+Servus,
+
+kann einer von euch mal bitte hier drüberschauen? Das sollte eigentlich so
+funktionieren, habe mich da an eine Anleitung gehalten, aber tut es nicht.
+Bestimmt ist irgenteine Kleinigkeit falsch, Bild falsch verlinkt oder ein
+Parameter falsch übergeben. Ziel ist Folgendes:
+
+Man kommt in einen Startscreen mit Login bzw. Exit Button: Bei Click auf Login
+kommt man dann in eine neue Activity die oben drei Tabs "view", "edit" und "exit"
+aufweist, mit welchen man dann eigetnlich navigieren können soll. Beim starten
+der Application im Emulator stürtzt das Ganze dann aber ab. In /documentation/log
+ist ein Error-Protokoll, mit googlnen findet man da auch was, aber leider bringt
+mich da nichts irgendwie weiter.
