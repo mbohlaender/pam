@@ -1,15 +1,15 @@
-package com.example.hello.world;
-
-public class serverData {
-	
-//	public static final String url = "";
+//package com.example.hello.world;
+//
+//public class serverData {
 //	
-//	private void getData(){
-//		
-//	}
+////	public static final String url = "";
+////	
+////	private void getData(){
+////		
+////	}
+////	
+////	public serverData(){
+////		
+////	}
 //	
-//	public serverData(){
-//		
-//	}
-	
-}
+//}

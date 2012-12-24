@@ -23,8 +23,9 @@ public class MainActivity extends Activity {
     public void onButtonClick(View view) {
     	
     	if (view.getId() == R.id.login) {
-    		startActivity(new Intent(this, ViewScreenActivity.class));
+    		startActivity(new Intent(this, Screen1_Activity.class));
     	}
+
     }
     
 }
