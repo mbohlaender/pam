@@ -37,7 +37,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/button2"
         android:ems="10"
-        android:inputType="textMultiLine" >
+        android:inputType="textMultiLine"
+        android:text="@string/change_note" >
 
         <requestFocus />
     </EditText>

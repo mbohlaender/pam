@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Login">
+        <item >Username</item>
+        <item >Password</item>
+    </string-array>
+    <string-array name="View_screen1">
+        <item >Notes</item>
+    </string-array>
+    <string-array name="Edit_screen2">
+        <item >Edit</item>
+    </string-array>
+    <string-array name="Viewsceen"></string-array>
+    
+</resources>
